@@ -1,0 +1,55 @@
+<!-- <div class="bg-light p-5 rounded-5">
+    <form *ngIf="student; else falseBlock">
+        <P class="h4">Student no.: {{ student.id }}</P>
+        Name: <span>{{ student.name }}</span><br /><br />
+        Age: <span>{{ student.age }}</span><br /><br />
+        Tel: <span>{{ student.tel }}</span><br /><br />
+        Email: <span>{{ student.email }}</span><br /><br />
+        Course: <span>{{ student.course }}</span><br /><br />
+        Grade: <span>{{ student.grade }}</span>
+    </form>
+    <ng-template #falseBlock>
+        <h1>Loading...</h1>
+    </ng-template>
+</div> -->
+<div class="row justify-content-center bg-light p-5">
+    <table class="table table-striped w-50" *ngIf="student; else falseBlock">
+        <thead>
+            <tr>
+                <th class="h4">
+                    Student no.: {{ student.id }}
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td>{{ student.name }}</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>{{ student.age }}</td>
+            </tr>
+            <tr>
+                <td>Tel:</td>
+                <td>{{ student.tel }}</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>{{ student.email }}</td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>{{ student.course }}</td>
+            </tr>
+            <tr>
+                <td>Grade:</td>
+                <td>{{ student.grade }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ng-template #falseBlock class="row justify-content-center bg-light p-5">
+        <h1>Loading...</h1>
+    </ng-template>
+</div>

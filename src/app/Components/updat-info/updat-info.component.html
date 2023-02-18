@@ -1,0 +1,72 @@
+<!-- <div class="bg-light p-5 rounded-5">
+<form [formGroup]="myFormValidation"  *ngIf="student; else falseBlock">
+	Name: <input #name formControlName="name" type="text" name="name"
+		placeholder="Enter your name." value="{{ student.name }}" />
+		<div class="alert alert-danger" *ngIf="!NameValid">
+			Name must be more than 2 letters.
+		</div>
+	Age: <input #age formControlName="age" type="text" name="age" 
+		placeholder="Enter your age." value="{{ student.age }}" />
+		<div class="alert alert-danger" *ngIf="!AgeValid">
+			Age must be between 20 and 40 years.
+		</div>
+	Tel: <input #tel formControlName="tel" type="text" name="tel" 
+		placeholder="Enter a valid telephone number." value="{{ student.tel }}" />
+		<div class="alert alert-danger" *ngIf="!TelValid">
+			Enter a valid telephone number.
+		</div>
+	Email: <input #email formControlName="email" type="email" name="email" 
+		placeholder="Enter a valid email address." value="{{ student.email }}" />
+		<div class="alert alert-danger" *ngIf="!EmailValid">
+			Enter a valid email address.
+		</div>
+	Course: <input #course formControlName="course" type="text" name="course" 
+		placeholder="Enter your course." value="{{ student.course }}" />
+		<div class="alert alert-danger" *ngIf="!CourseValid">
+			You must choose a course.
+		</div>
+	Grade: <input #grade formControlName="grade" type="text" name="grade" 
+		placeholder="Enter your grade." value="{{ student.grade }}" />
+		<div class="alert alert-danger" *ngIf="!GradeValid">
+			You must shoose a grade.
+		</div>
+	<input (click)="checkVals(); AddReg();
+			Update(name.value,age.value,tel.value,email.value,course.value,grade.value);" 
+		routerLink="/"
+		class="btn btn-success" type="button" name="add" value="Update Student Info" />
+</form>
+<ng-template #falseBlock>
+        <h1>Loading...</h1>
+</ng-template>
+</div> -->
+
+
+<div class="row justify-content-center bg-light p-5">
+<form class="table table-hover w-50" *ngIf="student; else falseBlock">
+	Name: <input #name type="text" name="name"
+		placeholder="Enter your name." value="{{ student.name }}" />
+		
+	Age: <input #age type="text" name="age" 
+		placeholder="Enter your age." value="{{ student.age }}" />
+		
+	Tel: <input #tel type="text" name="tel" 
+		placeholder="Enter a valid telephone number." value="{{ student.tel }}" />
+		
+	Email: <input #email type="email" name="email" 
+		placeholder="Enter a valid email address." value="{{ student.email }}" />
+		
+	Course: <input #course type="text" name="course" 
+		placeholder="Enter your course." value="{{ student.course }}" />
+		
+	Grade: <input #grade type="text" name="grade" 
+		placeholder="Enter your grade." value="{{ student.grade }}" />
+		
+	<input (click)="
+			Update(name.value,age.value,tel.value,email.value,course.value,grade.value);" 
+		routerLink="/"
+		class="btn btn-success" type="button" name="add" value="Update Student Info" />
+</form>
+<ng-template #falseBlock>
+        <h1>Loading...</h1>
+</ng-template>
+</div>

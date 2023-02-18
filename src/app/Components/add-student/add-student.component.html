@@ -1,0 +1,32 @@
+<div class="row justify-content-center bg-light p-5">
+<form class="table table-hover w-50" [formGroup]="myFormValidation">
+	Name: <input #name formControlName="name" type="text" name="name" placeholder="Enter your name." />
+		<div class="alert alert-danger py-2" *ngIf="!NameValid">
+			Name must be more than 2 letters.
+		</div>
+	Age: <input #age formControlName="age" type="text" name="age" placeholder="Enter your age." />
+		<div class="alert alert-danger py-2" *ngIf="!AgeValid">
+			Age must be between 7 and 18 years.
+		</div>
+	Tel: <input #tel formControlName="tel" type="text" name="tel" placeholder="Enter a valid telephone number." />
+		<div class="alert alert-danger py-2" *ngIf="!TelValid">
+			Enter a valid telephone number.
+		</div>
+	Email: <input #email formControlName="email" type="email" name="email" placeholder="Enter a valid email address." />
+		<div class="alert alert-danger py-2" *ngIf="!EmailValid">
+			Enter a valid email address.
+		</div>
+	Course: <input #course formControlName="course" type="text" name="course" placeholder="Enter your course." />
+		<div class="alert alert-danger py-2" *ngIf="!CourseValid">
+			You must choose a course.
+		</div>
+	Grade: <input #grade formControlName="grade" type="text" name="grade" placeholder="Enter your grade." />
+		<div class="alert alert-danger py-2" *ngIf="!GradeValid">
+			You must shoose a grade.
+		</div>
+	<input (click)="checkVals(); AddReg();
+			Add(name.value,age.value,tel.value,email.value,course.value,grade.value);" 
+		routerLink="/"
+		class="btn btn-success" type="button" name="add" value="Add Student" />
+</form>
+</div>

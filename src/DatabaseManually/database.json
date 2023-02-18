@@ -1,0 +1,85 @@
+{
+  "Students": [
+    {
+      "id": 1,
+      "name": "Dany",
+      "age": 15,
+      "tel": "01100000001",
+      "email": "dany@d.com",
+      "course": "Maths",
+      "grade": "G9"
+    },
+    {
+      "name": "Nola",
+      "age": "17",
+      "tel": "01200000004",
+      "email": "nola@n.com",
+      "course": "Science",
+      "grade": "G11",
+      "id": 2
+    },
+    {
+      "name": "Tara",
+      "age": "10",
+      "tel": "01300047003",
+      "email": "tara@t.com",
+      "course": "History",
+      "grade": "G4",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Sara",
+      "age": 14,
+      "tel": "0150000005",
+      "email": "sara@s.com",
+      "course": "Science",
+      "grade": "G8"
+    },
+    {
+      "id": 5,
+      "name": "Mona",
+      "age": 13,
+      "tel": "01100000004",
+      "email": "mona@m.com",
+      "course": "Maths",
+      "grade": "G7"
+    },
+    {
+      "id": 6,
+      "name": "Bahi",
+      "age": 18,
+      "tel": "01200000003",
+      "email": "bahi@b.com",
+      "course": "English",
+      "grade": "G12"
+    },
+    {
+      "id": 7,
+      "name": "Falmore",
+      "age": 12,
+      "tel": "01500000007",
+      "email": "falmore@f.com",
+      "course": "History",
+      "grade": "G6"
+    },
+    {
+      "name": "Lara",
+      "age": 9,
+      "tel": "01200000004",
+      "email": "lara@l.com",
+      "course": "English",
+      "grade": "G3",
+      "id": 8
+    },
+    {
+      "name": "Yara",
+      "age": "7",
+      "tel": "01300000005",
+      "email": "yara@y.com",
+      "course": "Arts",
+      "grade": "G1",
+      "id": 9
+    }
+  ]
+}
